@@ -1,2 +1,12 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<div class="container">
+  <h1>Stupid coaching</h1>
+  <div class="border-start border-5 ps-2">
+    <p class="fs-5"><%= @question %></p>
+    <p class="fst-italic">-You</p>
+  </div>
+  <div class="border-start border-5 ps-2">
+    <p><%= @answer %></p>
+    <p class="fst-italic">-Your coach</p>
+  </div>
+  <%= link_to "Ask another question!", ask_path, class: "link-primary" %>
+</div>
